@@ -6,12 +6,19 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class StreamOperationTest {
+    /**
+     * Pada method testStreamOperation kita sedang mengganti data value dari string menjadi integer
+     */
     @Test
     void testStreamOperation(){
         List<String> arr = List.of("123", "456", "789");
         Stream<String> stream = arr.stream();
         stream.forEach(s -> System.out.println(Integer.parseInt(s)));
     }
+
+    /**
+     * Membuat testPipeline
+     */
     @Test
     void testStreamPipelineOk(){
         List<String> pipa = List.of("Naufal", "Abdul", "Basth");
